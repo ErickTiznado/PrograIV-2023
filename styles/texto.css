@@ -1,0 +1,44 @@
+
+.Alumos {
+  width: 400px;
+  height:500px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+    box-shadow: 2px 2px 10px #cccccc; /* sombras */
+    color: white;
+    font-size: medium;
+    background-color: #303c55a1;
+
+}
+.form-container {
+    position: absolute;
+    top: 50%;left: 50%;
+    width: 400px; 
+    height: 600px;
+    transform: translate(-50%, -50%);
+    text-align: left; /* centramos el contenido del contenedor */
+  }
+
+.color-1 {color: #80a0e4;}
+.color-2 {color: #708cc8;}
+.color-3 {color: #6078ab;}
+.color-4 {color: #50648e;}
+.color-5 {color: #405072;}
+.color-6 {color: #303c55;}
+.color-7 {color: #202839;}
+.color-8 {color: #10141c;}
+
+.labels{
+text-align: left;
+border: 5px solid transparent;
+}
+
+.inputs{
+  border: 15px;
+  padding-right: 10px;
+  border-right: 10px solid transparent;
+  border-top: 10px;
+  border-bottom: 10px;
+}

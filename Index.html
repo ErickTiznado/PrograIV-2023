@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumnos</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/particulas.css">
+    <link rel="stylesheet" href="styles/texto.css">
+</head>
+<body>
+
+<div class="form-container">
+    
+    <form class="Alumos" id="frmAlumos">
+        <div>
+            <h1>Registro de Alumnos</h1>
+        </div>
+        <br>
+        <div>
+            <label class="labels" for="CodigoAlumnos">Codigo:</label>
+            <input  class="inputs"  required type="text" name="CodigoAlumnos" id="CodigoAlumnos">
+        </div>
+        <br>
+        <div>
+            <label class="labels" for="NombreAlumnos">Nombre:</label>
+            <input class="inputs"  required type="text" name="NombreAlumnos" id="NombreAlumnos">
+        </div>
+        <br>
+        <div>
+            <label class="labels" for="DireccionAlumnos">Direccion</label>
+            <input  class="inputs" required type="" name="DireccionAlumnos" id="DireccionAlumnos">
+        </div>
+        <br>
+        <div>
+            <label class="labels" for="MunicipioAlumnos">Municipio:</label>
+            <input class="inputs"  required type="text" name="MunicipioAlumnos" id="MunicipioAlumnos">
+        </div>
+        <br>
+        <div>
+            <label class="labels" for="departamentos">Departamentos:</label>
+            <select  class="inputs" required id="departamentos" name="departamentos">
+                <option value=""></option>
+                <option value="ama">Amazonas</option>
+                <option value="ant">Antioquia</option>
+                <option value="ara">Arauca</option>
+                <option value="atl">Atlántico</option>
+                <option value="bol">Bolívar</option>
+                <option value="boy">Boyacá</option>
+                <option value="cal">Caldas</option>
+                <option value="caq">Caquetá</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label class="labels" for="TelAlumnos">Telefono</label>
+            <input class="inputs"  required type="tel" name="TelAlumnos" id="TelAlumnos">
+        </div>
+        <br>
+        <div>
+            <label class="labels" for="FechaNacimiento">Fecha Naciento:</label>
+            <input  class="inputs" required type="date" name="FechaNacimiento" id="FechaNacimiento">
+        </div>
+        <br>
+        <div>
+            <label class="labels" for="genero">Genero:</label>
+            <select style="width: auto; height:auto ;" class="inputs"  required id="genero" name="genero">
+                <option value=""></option>
+                <option value="fem">Femenino</option>
+                <option value="mas">Masculino</option>
+                <option value="otr">Otro...</option>
+        </div>
+        <br>
+        <div>
+            <input style="display: inline;" type="submit" value="Guardar Datos">
+            <input style="display: inline;" type="submit" value="Nuevo">
+        </div>
+    </form>
+</div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="./js/particulas.js"></script>
+</body>
+
+</html>

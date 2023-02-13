@@ -8,33 +8,33 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body  style="background-color:#303c55;">
     <div class="container p-2 " id="app">
         <div class="row p-5 d-flex justify-content-center" >
-<div class="card col-12 col-md-5">
+<div class="card col-12 col-md-5" style="background-color: #50648e; color:white;" >
     <div class="card-header">Registro de Alumnos</div>
         <div class="card-body">
                     <form id="frmAlumnos"  @reset.prevent="nuevoAlumno" v-on:submit.prevent="guardarAlumnos">
                         <div class="row p-1">
                             <div class="col-md-6">
                               <label for="txtCodigo" class="form-label">Codigo:</label>
-                              <input v-model="alumno.codigo" type="text" class="form-control" id="txtCodigo">
+                              <input pattern="^(USIS|SMIS)\d{6}$" required v-model="alumno.codigo" type="text" class="form-control" id="txtCodigo">
                             </div>
                             <div class="col-md-6">
                               <label for="txtNombre" class="form-label">Nombre completo</label>
-                              <input v-model="alumno.nombre" type="text" class="form-control" id="txtNombre">
+                              <input required v-model="alumno.nombre" type="text" class="form-control" id="txtNombre">
                         </div>
                         </div>
                         <div class="row p-1">
                             <div class="col-12">
                               <label for="txtDireccion" class="form-label">Direccion</label>
-                              <input v-model="alumno.direccion" type="text" class="form-control" id="txtDireccion" placeholder="1234 Main St">
+                              <input pattern="^[a-zA-Z\s]{1,75}$" required v-model="alumno.direccion" type="text" class="form-control" id="txtDireccion" placeholder="1234 Main St">
                             </div>
                         </div>
                         <div class="row p-1">
                             <div class="col-6">
                                 <label for="txtMunicipio" class="form-label">Municipio</label>
-                                <input v-model="alumno.municipio"type="text" class="form-control" id="txtMunicipio">
+                                <input required v-model="alumno.municipio"type="text" class="form-control" id="txtMunicipio">
                             </div>
                             <div class="col-md-6">
                                 <label for="txtDepartamento" class="form-label">Departamento</label>
@@ -60,7 +60,7 @@
                         <div class="row p-1">
                             <div class="col-md-6">
                                 <label for="txtTelefono" class="form-label">Telefono</label>
-                                <input v-model="alumno.telefono" type="text" class="form-control" id="txtTelefono">
+                                <input required v-model="alumno.telefono" type="text" class="form-control" id="txtTelefono">
                             </div>
                             <div class="col-md-6">
                                 <label for="txtGenero" class="form-label">Sexo</label>
@@ -75,10 +75,10 @@
                         <div class="row p-1">
                             <div class="col-md-12">
                                 <label for="txtFechadeNacimiento" class="form-label">Fecha de nacimiento</label>
-                                <input v-model='alumno.fecha' type="date" class="form-control p-1" id="txtFechadeNacimiento">
+                                <input required v-model='alumno.fecha' type="date" class="form-control p-1" id="txtFechadeNacimiento">
                             </div>
                         </div>
-                        <div class="row p-1">
+                        <div class="row p-1"> 
                             <div class="col-md-6">
                               <button type="submit" class="btn btn-primary">Guardar</button>
                             </div>
@@ -92,7 +92,7 @@
     </div>
 <div class="row p-5">
         <div class="col-12 col-md-12">
-            <div class="card">
+            <div class="card" style="background-color: #50648e; color:white;">
                 <div class="card-header">Listado De Alumnos Inscritos</div>
                 <div class="card-body">
                     <table class="table table-bordered table-hover">
